@@ -13,6 +13,22 @@ void MGcode(){                                  //Function that runs in the even
       FirmwareCapabilities();                   //In case M115 Send the firmware capabilities of this arm 
     break;
 
+    case 212:
+      Shutter_Snapshot();                   //In case M212 Open the shutter for a specific amount of time defined in the command
+    break;
+
+    case 213:
+      openShutter();                        //In case M213 Open the shutter
+    break;
+
+    case 214:
+      closeShutter();                         //In case M214 close the shutter
+    break;
+
+    case 18:
+      DisableSteppers();                         //In case M18 disengage motor
+    break;
+
     default:
     {
       UnknownCommand();    //In the case of anything else, send: Unknown Command
