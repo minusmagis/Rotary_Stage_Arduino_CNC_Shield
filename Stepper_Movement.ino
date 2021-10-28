@@ -37,5 +37,5 @@ void MoveSteppers(float Rmove) {
 
 void DisableSteppers(){
     digitalWrite(STEPPERS_ENABLE_PIN, HIGH);                // Disable the steppers
-    Serial.println("Dteppers Disabled");
+    Serial.println("Steppers Disabled");
 }

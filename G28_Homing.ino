@@ -8,10 +8,13 @@ extern float RstepsDeg;                                        //Define the step
 extern int RspeedinDegs;                                     //Define the speed in Deg/s
 extern const int LIMIT_SWITCH_R_PIN;
 boolean homeR = false;
+extern float HomePosition;
+
 
 void Home() {  
+  digitalWrite(STEPPERS_ENABLE_PIN, LOW);                // Enable the steppers
   AbsolutePos = true;                               //Set the absolute positioning to true to be able to go to the home position accurately (NOTE THAT IF ON RELATIVE MODE HOMING WILL OVERRIDE TO ABSOLUTE MODE)
-  PosR = -100;                                         //Set the position to the homing position and home the steppers
+  PosR = HomePosition;                                         //Set the position to the homing position and home the steppers
   float RStepsPerSecond  = RstepsDeg * RspeedinDegs;
   Serial.println("Homing R");
   homeR = stepperR.moveToHomeInSteps(directionTowardHomeR, RStepsPerSecond, RmaxHomingDistanceInSteps, LIMIT_SWITCH_R_PIN);

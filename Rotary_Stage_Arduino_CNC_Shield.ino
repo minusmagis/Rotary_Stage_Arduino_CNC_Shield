@@ -35,6 +35,8 @@ int RDegss = 4;                                            //Define the accelera
 int RaxisRangeMaxDeg = 120;                                  //Declare the min range of the r axis (in deg)
 int RaxisRangeMinDeg = -90;                                  //Declare the max range of the r axis (in deg)
 
+float HomePosition = -100;                                  // Declare the position of the motor when homed
+
 
 SpeedyStepper stepperR;
 
@@ -52,10 +54,11 @@ void setup() {
   stepperR.setStepsPerMillimeter(RstepsDeg);
   stepperR.setAccelerationInMillimetersPerSecondPerSecond(RDegss);
 
-  digitalWrite(STEPPERS_ENABLE_PIN, LOW);                // Enable the steppers
+  digitalWrite(STEPPERS_ENABLE_PIN, HIGH);               // Disable the steppers
 
   Serial.begin(9600);                                    // Begin Serial communication
   StartCode();                                           // Send the startcode
+  closeShutter();                                        // Start With the shutter closed
 }
 
 void loop() {
