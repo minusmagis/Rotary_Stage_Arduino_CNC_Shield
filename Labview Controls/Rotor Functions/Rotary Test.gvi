@@ -1,0 +1,682 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="37D08457C043016F36E18867C1B7E42DBB2B19F60904D3702245D9D4F4105486B24E294B7174AC98B0BE61D3F35F89BD401B39B5B055FE376A1A3A43725EBDF9" Timestamp="1D7C98ECAEE3D38" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="dea83f2fcf0a4a669d7f8055eec77dd0" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="8f0abc018c8b43838ed35806602e5fb4" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="886aeebac47743b3bc1e3f74e5dc9e16" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="9afb5c7b49da44fcba117379fc79f08a" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="45d033bd21fd47bdb2e329d94e5e1954" IsHitTestVisible="[bool]False" Left="[float]0" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="c0bd91ed216a48fbbaf723f35cf0460e" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7080c921cc5a438db7388ce12670dbbf" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Rotary Test" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Segoe UI" FontSize="9" Id="b736759f716046ca9051d106930a28df" />
+					</FileNameText>
+				</IconTemplate>
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="106f7492c02546cfa42973dc5a404d1f" ListViewHeight="40" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="a8d5349bedcf4adfb87f8a8841701681" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="f5e3ae0ad28e4c4daf677b58c2d3ee4f" Left="[float]0" PanelSizeMode="Fixed" Top="[float]0" />
+		<BlockDiagram Id="dd527d58e3224014b3dbb90f8f2bd823">
+			<MethodCall Bounds="375 270 40 40" Id="bb536cd6839a41b6baf1729b84d81978" ResolveFailedHint="&quot;C:\\Users\\admin\\Documents\\LabVIEW Projects\\PL&amp;Lasing\\RotorsFunctions\\Rotary Stage Initialize And Home.gvi&quot;" Signature="@7bfbac67fa4141dca3106727e9c08749" Target="Rotary Stage Initialize And Home.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Comunications Ports In" />
+						<Parameter Id="L3" Desc="Error In  " />
+						<Parameter Id="R0" Desc="Comunications Ports Out" />
+						<Parameter Id="R3" Desc="Error Out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@f9aa2f93a3094aeb996687db0563cfa1" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@f9aa2f93a3094aeb996687db0563cfa1" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="785 270 40 40" Id="6440262ffcb747e4ad0f1ae2903d83c3" ResolveFailedHint="&quot;C:\\Users\\admin\\Documents\\LabVIEW Projects\\PL&amp;Lasing\\RotorsFunctions\\Rotary Stage Close Coms.gvi&quot;" Signature="@4f7e68eb88124b28b78b7a299a305f1e" Target="Rotary Stage Close Coms.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Instrument Info In" />
+						<Parameter Id="L3" Desc="Error In" />
+						<Parameter Id="R0" Desc="Instrument Info Out" />
+						<Parameter Id="R3" Desc="Error Out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@f9aa2f93a3094aeb996687db0563cfa1" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@f9aa2f93a3094aeb996687db0563cfa1" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<DataAccessor Bounds="845 270 40 15" DataItem="e07026184266496cb2d8f2ed110d4f1c" Id="3b2e2612fff846d1b899fea6da3a0be2" Label="f773527620974e0d98aeb953f5b04c48" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@f9aa2f93a3094aeb996687db0563cfa1" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="3b2e2612fff846d1b899fea6da3a0be2" Bounds="890 270 112 14" Id="f773527620974e0d98aeb953f5b04c48" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Instrument Info Out</p.Text>
+			</NodeLabel>
+			<Wire Id="ee04b40b2c7a4c14ad9eba93ce59372b" Joints="N(1b157e17b736434fb032ba2bf4a9f954:Out)|(346,275) N(bb536cd6839a41b6baf1729b84d81978:L0)|(375,275)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ClusterLiteral Bounds="185 270 161 220" DataType="@f9aa2f93a3094aeb996687db0563cfa1" Id="1b157e17b736434fb032ba2bf4a9f954" Label="fd56cc7cbac44d7b9c550dc4588208aa" p4:ControlDefinitionChecksum="aTh1+soH0N2OBLQedX2yHS9NV3EvmNO+vyq6rWS+Cuc=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Cluster>
+						<Field1>""</Field1>
+						<Field2>COM9</Field2>
+						<Field3>False</Field3>
+						<Field4>0x0</Field4>
+						<Field5>""</Field5>
+					</Cluster>
+				</p.Data>
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="Instrument Info.gtype" />
+					<p4:TypeDefinitionTarget TargetName="Instrument Info.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<ClusterBehavior AutoArrange="ArrangeVertically" />
+				<IONameConstant AllowUndefinedValues="True" Bounds="2 19 140 30" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr" Id="b7d574c47abb471dbdbedbcbcfbbefef" Label="21404e32d72d46d1a1c82243943101ae" ShowNamespace="True">
+					<p.Data>""</p.Data>
+					<p4:p.TypeDefinitionTargets>
+						<p4:TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr" />
+					</p4:p.TypeDefinitionTargets>
+					<IONameConstantBehavior />
+				</IONameConstant>
+				<NodeLabel AttachedTo="b7d574c47abb471dbdbedbcbcfbbefef" Bounds="2 2 96 14" Id="21404e32d72d46d1a1c82243943101ae" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>PortCom_Sample</p.Text>
+				</NodeLabel>
+				<IONameConstant AllowUndefinedValues="True" Bounds="2 70 140 30" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr" Id="a9372cb8928a46569b9beda1f0e6e4cd" Label="de790355aa5d4110a5760b1307063ded" ShowNamespace="True">
+					<p.Data>COM9</p.Data>
+					<p4:p.TypeDefinitionTargets>
+						<p4:TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr" />
+					</p4:p.TypeDefinitionTargets>
+					<IONameConstantBehavior />
+				</IONameConstant>
+				<NodeLabel AttachedTo="a9372cb8928a46569b9beda1f0e6e4cd" Bounds="2 53 120 14" Id="de790355aa5d4110a5760b1307063ded" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Rotary Stage Address</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 121 25 15" DataType="Boolean" Id="12d84df50af64d71979dea781e2a4ace" Label="6f4ce0be69a443288baf96f3db6bea52">
+					<p.Data>False</p.Data>
+					<BooleanBehavior />
+				</Literal>
+				<NodeLabel AttachedTo="12d84df50af64d71979dea781e2a4ace" Bounds="2 104 86 14" Id="6f4ce0be69a443288baf96f3db6bea52" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Rotary Homed?</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 157 40 15" DataType="Double" Id="6bc48f8c59c04867a084d2cafcca7fcd" Label="292e5724dce478c8bf13d8499190bf9">
+					<p.Data>0x0</p.Data>
+					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+				</Literal>
+				<NodeLabel AttachedTo="6bc48f8c59c04867a084d2cafcca7fcd" Bounds="2 140 47 14" Id="292e5724dce478c8bf13d8499190bf9" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Wrapper</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 193 40 15" DataType="String" Id="ef80704b0b854736a5c97203bb9dbf58" Label="22be917cca52409fa3ce68fccae2d551">
+					<p.Data>""</p.Data>
+					<StringBehavior TextDisplayMode="Default" />
+				</Literal>
+				<NodeLabel AttachedTo="ef80704b0b854736a5c97203bb9dbf58" Bounds="2 176 96 14" Id="22be917cca52409fa3ce68fccae2d551" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Rotary Stage Log</p.Text>
+				</NodeLabel>
+			</ClusterLiteral>
+			<NodeLabel AttachedTo="1b157e17b736434fb032ba2bf4a9f954" Bounds="185 252 30 15" Id="fd56cc7cbac44d7b9c550dc4588208aa" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Comunications Ports In</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="505 270 40 40" Id="2b32622f24dd4cf499ffe68572ea9cce" ResolveFailedHint="&quot;C:\\Users\\admin\\Documents\\LabVIEW Projects\\PL&amp;Lasing\\RotorsFunctions\\Rotary Disable Steppers.gvi&quot;" Signature="@70ab436615094161af48bc4411d041e8" Target="Rotary Disable Steppers.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Instrument Info" />
+						<Parameter Id="L3" Desc="Error In" />
+						<Parameter Id="R0" Desc="instrument info out" />
+						<Parameter Id="R3" Desc="Error Out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@f9aa2f93a3094aeb996687db0563cfa1" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@f9aa2f93a3094aeb996687db0563cfa1" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="ea9d2bbc247940849b9e974e5303f227" Joints="N(6440262ffcb747e4ad0f1ae2903d83c3:R0)|(825,275) N(3b2e2612fff846d1b899fea6da3a0be2:Value)|(848,275)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="445 270 40 40" Id="a8b59bf8df8846c2ba168e64e47747de" ResolveFailedHint="&quot;C:\\Users\\admin\\Documents\\LabVIEW Projects\\PL&amp;Lasing\\RotorsFunctions\\Rotary Stage Move to Position.gvi&quot;" Signature="@86b66a966c0a42ec9f364b3d152f0ed3" Target="Rotary Stage Move to Position.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Instrument Info In" />
+						<Parameter Id="L1" Desc="Rotary Move Cluster" />
+						<Parameter Id="L3" Desc="Error In  " />
+						<Parameter Id="R0" Desc="Instrument Control Mega Cluster Out" />
+						<Parameter Id="R3" Desc="Error Out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@f9aa2f93a3094aeb996687db0563cfa1" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@eef5713fc82f414d88c3bec29c552064" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@f9aa2f93a3094aeb996687db0563cfa1" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="23f84d285c2642dbb9467219583bb98d" Joints="N(bb536cd6839a41b6baf1729b84d81978:R3)|(415,305) N(a8b59bf8df8846c2ba168e64e47747de:L3)|(445,305)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="fa666373bfe34b87bff55227f0388c89" Joints="N(a8b59bf8df8846c2ba168e64e47747de:R3)|(485,305) N(2b32622f24dd4cf499ffe68572ea9cce:L3)|(505,305)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="4ae4b852fe304f659d810a5842246c7d" Joints="N(bb536cd6839a41b6baf1729b84d81978:R0)|(415,275) N(a8b59bf8df8846c2ba168e64e47747de:L0)|(445,275)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="1a3650f5541a49539b602505dd0bdc56" Joints="N(a8b59bf8df8846c2ba168e64e47747de:R0)|(485,275) N(2b32622f24dd4cf499ffe68572ea9cce:L0)|(505,275)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ClusterLiteral Bounds="230 170 114 82" DataType="@eef5713fc82f414d88c3bec29c552064" Id="fae1c565c0bd41139adae63988aa2142" Label="207c873a74142eeb3b63ef32dd1f12b" p4:ControlDefinitionChecksum="yVZ2XDieZMhLymvEWPktoVRvaZOCqwigM8bvQFY5ock=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0xC056800000000000_100_</p.Data>
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="Rotary Move Cluster.gtype" />
+					<p4:TypeDefinitionTarget TargetName="Rotary Move Cluster.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<ClusterBehavior AutoArrange="ArrangeVertically" />
+				<Literal Bounds="2 19 40 15" DataType="Double" Id="de16a2463b88459c96c256a54acffab1" Label="1120762b9db4fff845a175f6ad7520e">
+					<p.Data>0xC056800000000000</p.Data>
+					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+				</Literal>
+				<NodeLabel AttachedTo="de16a2463b88459c96c256a54acffab1" Bounds="2 2 93 14" Id="1120762b9db4fff845a175f6ad7520e" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Position Degrees</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 55 40 15" DataType="Int32" Id="518d422a67b54848a4e9dfdde5468804" Label="e8ab44276b7f4bf69b3a8d550993d2d3">
+					<p.Data>100</p.Data>
+					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
+				</Literal>
+				<NodeLabel AttachedTo="518d422a67b54848a4e9dfdde5468804" Bounds="2 38 49 14" Id="e8ab44276b7f4bf69b3a8d550993d2d3" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Feedrate</p.Text>
+				</NodeLabel>
+			</ClusterLiteral>
+			<NodeLabel AttachedTo="fae1c565c0bd41139adae63988aa2142" Bounds="230 255 30 15" Id="207c873a74142eeb3b63ef32dd1f12b" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Rotary Move Cluster</p.Text>
+			</NodeLabel>
+			<Wire Id="36a9f8253d4d4e7ca2b3ea524d564828" Joints="N(fae1c565c0bd41139adae63988aa2142:Out)|(344,175) h(91) v(110) N(a8b59bf8df8846c2ba168e64e47747de:L1)|(445,285)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="580 270 40 40" Id="310c92fcade843f5996a7bf0a57641f2" ResolveFailedHint="&quot;C:\\Users\\admin\\Documents\\LabVIEW Projects\\PL&amp;Lasing\\RotorsFunctions\\Rotary Shutter.gvi&quot;" Signature="@b9c986ca3bc54f58808da103b6f68666" Target="Rotary Shutter.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Instrument Info" />
+						<Parameter Id="L1" Desc="Snapshot Exposure Time (ms)" />
+						<Parameter Id="L3" Desc="Error In" />
+						<Parameter Id="T0" Desc="Shutter Operations" />
+						<Parameter Id="R0" Desc="instrument info out" />
+						<Parameter Id="R3" Desc="Error Out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@f9aa2f93a3094aeb996687db0563cfa1" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@935043af93874d8d81456513716596e3" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@f9aa2f93a3094aeb996687db0563cfa1" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="273207e922d7469e84bdd787176f8d0c" Joints="N(2b32622f24dd4cf499ffe68572ea9cce:R0)|(545,275) N(310c92fcade843f5996a7bf0a57641f2:L0)|(580,275)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="522e117ef0a040df8ab779c3439a7ad5" Joints="N(2b32622f24dd4cf499ffe68572ea9cce:R3)|(545,305) N(310c92fcade843f5996a7bf0a57641f2:L3)|(580,305)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="630 270 40 40" Id="764776828dd44eb28b4fe78082272284" ResolveFailedHint="&quot;C:\\Users\\admin\\Documents\\LabVIEW Projects\\PL&amp;Lasing\\RotorsFunctions\\Rotary Shutter.gvi&quot;" Signature="@b9c986ca3bc54f58808da103b6f68666" Target="Rotary Shutter.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Instrument Info" />
+						<Parameter Id="L1" Desc="Snapshot Exposure Time (ms)" />
+						<Parameter Id="L3" Desc="Error In" />
+						<Parameter Id="T0" Desc="Shutter Operations" />
+						<Parameter Id="R0" Desc="instrument info out" />
+						<Parameter Id="R3" Desc="Error Out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@f9aa2f93a3094aeb996687db0563cfa1" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@935043af93874d8d81456513716596e3" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@f9aa2f93a3094aeb996687db0563cfa1" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="690 270 40 40" Id="a056de47ea6e4e12addba10b7f93655e" ResolveFailedHint="&quot;C:\\Users\\admin\\Documents\\LabVIEW Projects\\PL&amp;Lasing\\RotorsFunctions\\Rotary Shutter.gvi&quot;" Signature="@b9c986ca3bc54f58808da103b6f68666" Target="Rotary Shutter.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Instrument Info" />
+						<Parameter Id="L1" Desc="Snapshot Exposure Time (ms)" />
+						<Parameter Id="L3" Desc="Error In" />
+						<Parameter Id="T0" Desc="Shutter Operations" />
+						<Parameter Id="R0" Desc="instrument info out" />
+						<Parameter Id="R3" Desc="Error Out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@f9aa2f93a3094aeb996687db0563cfa1" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@935043af93874d8d81456513716596e3" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@f9aa2f93a3094aeb996687db0563cfa1" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="6042eaeee4e4a6e94a581c874f95d31" Joints="N(310c92fcade843f5996a7bf0a57641f2:R3)|(620,305) N(764776828dd44eb28b4fe78082272284:L3)|(630,305)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="a7dbc437fa13455c9449d68ccc10d027" Joints="N(764776828dd44eb28b4fe78082272284:R3)|(670,305) N(a056de47ea6e4e12addba10b7f93655e:L3)|(690,305)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="cbf1e2c45c56492e9fe9965bfc060dd7" Joints="N(a056de47ea6e4e12addba10b7f93655e:R3)|(730,305) N(6440262ffcb747e4ad0f1ae2903d83c3:L3)|(785,305)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="baf2fc04b1e44dc1ad781ec2fe185151" Joints="N(310c92fcade843f5996a7bf0a57641f2:R0)|(620,275) N(764776828dd44eb28b4fe78082272284:L0)|(630,275)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="124f51813bc740aba20e5ea75b632920" Joints="N(764776828dd44eb28b4fe78082272284:R0)|(670,275) N(a056de47ea6e4e12addba10b7f93655e:L0)|(690,275)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="7ab9bd3795c54e6aaf8eb2753fab5132" Joints="N(a056de47ea6e4e12addba10b7f93655e:R0)|(730,275) N(6440262ffcb747e4ad0f1ae2903d83c3:L0)|(785,275)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="600 258 12 9" DataType="@935043af93874d8d81456513716596e3" Id="2f44584a36864b1c815389e2fefe386b" Label="bf53aa9fdf084baa8382eec2305f6160" p4:ControlDefinitionChecksum="mWCdAEyymqCneJ46N6vHS2LrBE0VwuM1/b9bcPtsebQ=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>1</p.Data>
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="Shutter Operations.gtype" />
+					<p4:TypeDefinitionTarget TargetName="Shutter Operations.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<EnumBehavior />
+				<DockedConstantFacade UndockedSize="115 15" />
+			</Literal>
+			<NodeLabel AttachedTo="2f44584a36864b1c815389e2fefe386b" Bounds="600 240 30 15" Id="bf53aa9fdf084baa8382eec2305f6160" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Shutter Operations</p.Text>
+			</NodeLabel>
+			<Wire Facade="WireInvisibleFacade" Id="a5965345e34241b9ab63a62070fbf861" Joints="N(2f44584a36864b1c815389e2fefe386b:Out)|(715,263) v(9) h(-120) N(310c92fcade843f5996a7bf0a57641f2:T0)|(595,270)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="650 258 12 9" DataType="@935043af93874d8d81456513716596e3" Id="92c8706903394ccb986338f421b50cb3" Label="e57e276655134bccb7f341c335dcb6c4" p4:ControlDefinitionChecksum="mWCdAEyymqCneJ46N6vHS2LrBE0VwuM1/b9bcPtsebQ=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>2</p.Data>
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="Shutter Operations.gtype" />
+					<p4:TypeDefinitionTarget TargetName="Shutter Operations.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<EnumBehavior />
+				<DockedConstantFacade UndockedSize="115 15" />
+			</Literal>
+			<NodeLabel AttachedTo="92c8706903394ccb986338f421b50cb3" Bounds="650 240 30 15" Id="e57e276655134bccb7f341c335dcb6c4" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Shutter Operations</p.Text>
+			</NodeLabel>
+			<Wire Facade="WireInvisibleFacade" Id="4e64b647c40f4ff486771d99e6c5eaa1" Joints="N(92c8706903394ccb986338f421b50cb3:Out)|(765,263) v(9) h(-120) N(764776828dd44eb28b4fe78082272284:T0)|(645,270)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="710 258 12 9" DataType="@935043af93874d8d81456513716596e3" Id="8189bb41fda4667a8ab3fe252f947fd" Label="a519907b3f354bf299d79646aebcb1b0" p4:ControlDefinitionChecksum="mWCdAEyymqCneJ46N6vHS2LrBE0VwuM1/b9bcPtsebQ=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0</p.Data>
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="Shutter Operations.gtype" />
+					<p4:TypeDefinitionTarget TargetName="Shutter Operations.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<EnumBehavior />
+				<DockedConstantFacade UndockedSize="90 15" />
+			</Literal>
+			<NodeLabel AttachedTo="8189bb41fda4667a8ab3fe252f947fd" Bounds="710 240 30 15" Id="a519907b3f354bf299d79646aebcb1b0" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Shutter Operations</p.Text>
+			</NodeLabel>
+			<Wire Facade="WireInvisibleFacade" Id="4c6dca6d4aa24de4a323701db4dea79d" Joints="N(8189bb41fda4667a8ab3fe252f947fd:Out)|(800,263) v(9) h(-95) N(a056de47ea6e4e12addba10b7f93655e:T0)|(705,270)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="678 280 12 9" DataType="Int32" Id="6b3efdb95b5948c5b3ab8623dee2832a" Label="93df8e7554be4f22836431bf3ce0360e" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>50</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
+				<DockedConstantFacade UndockedSize="40 15" />
+			</Literal>
+			<NodeLabel AttachedTo="6b3efdb95b5948c5b3ab8623dee2832a" Bounds="678 262 30 15" Id="93df8e7554be4f22836431bf3ce0360e" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Snapshot Exposure Time (ms)</p.Text>
+			</NodeLabel>
+			<Wire Facade="WireInvisibleFacade" Id="f30502ae12fa4009b0a6dc37c1485384" Joints="N(6b3efdb95b5948c5b3ab8623dee2832a:Out)|(718,285) N(a056de47ea6e4e12addba10b7f93655e:L1)|(690,285)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<NativeFrontPanel Background="[SMSolidColorBrush]#ffffffff" Height="[float]1600" HtmlPanel="[bool]False" Id="b68e4d6890c44e694726986974bead4" Left="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
+			<PanelExecutionWindow Id="fb1098b1c44b4cca8f9f59fccbb5b0a6" />
+			<Cluster BaseName="[string]Instrument Info" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@f9aa2f93a3094aeb996687db0563cfa1" Enabled="[bool]True" Height="[float]222" Id="fe61e2c08293488ab2c304df40eb3d4f" IsTabStop="[bool]True" Label="[UIModel]3ac30ec759524e88ac96594873a812ff" LabelLinked="[bool]True" Left="[float]308" TabIndex="[int]0" Top="[float]196" Value="{DataItemBinding Id=e07026184266496cb2d8f2ed110d4f1c}" Width="[float]290" p4:ControlDefinitionChecksum="aTh1+soH0N2OBLQedX2yHS9NV3EvmNO+vyq6rWS+Cuc=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="Instrument Info.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr" Enabled="[bool]True" Height="[float]24" Id="93e6749612b34530873c639182ac9a90" IsReadOnly="[bool]True" Label="[UIModel]23222ec2c8244f4887cb1d4b5b5b8250" Left="[float]5" MinHeight="[float]24" SelectedResource="{ClusterBinding FieldName=PortCom_Sample}" ShowType="[bool]False" ShowUserRefresh="[bool]True" TabIndex="[int]0" Top="[float]24" Width="[float]175" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+					<p4:p.TypeDefinitionTargets>
+						<p4:TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
+					</p4:p.TypeDefinitionTargets>
+				</IONameControl>
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="23222ec2c8244f4887cb1d4b5b5b8250" LabelOwner="[UIModel]93e6749612b34530873c639182ac9a90" Left="[float]5" Text="[string]PortCom_Sample" Top="[float]4" Width="[float]91" />
+				<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr" Enabled="[bool]True" Height="[float]24" Id="da7d28c4a1a34e7b84e6582e35fcdca9" IsReadOnly="[bool]True" Label="[UIModel]ed5fbde9a801467289705432ed8873f9" Left="[float]5" MinHeight="[float]24" SelectedResource="{ClusterBinding FieldName=Rotary\ Stage\ Address}" ShowType="[bool]False" ShowUserRefresh="[bool]True" TabIndex="[int]1" Top="[float]73" Width="[float]175" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+					<p4:p.TypeDefinitionTargets>
+						<p4:TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
+					</p4:p.TypeDefinitionTargets>
+				</IONameControl>
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="ed5fbde9a801467289705432ed8873f9" LabelOwner="[UIModel]da7d28c4a1a34e7b84e6582e35fcdca9" Left="[float]5" Text="[string]Rotary Stage Address" Top="[float]53" Width="[float]113" />
+				<LED BaseName="[string]Square LED" Enabled="[bool]True" FalseContent="[string]Off" Height="[float]24" Id="ce3686b3453a4f6ab14c430544aed672" IsReadOnly="[bool]True" Label="[UIModel]5329aef9a44e43b9b2da6ba7d9ea0ee9" Left="[float]192" Shape="[LEDShape]Square" TabIndex="[int]2" Top="[float]74" TrueContent="[string]On" Value="{ClusterBinding FieldName=Rotary\ Homed?}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="5329aef9a44e43b9b2da6ba7d9ea0ee9" LabelOwner="[UIModel]ce3686b3453a4f6ab14c430544aed672" Left="[float]192" Text="[string]Rotary Homed?" Top="[float]54" Width="[float]82" />
+				<NumericText BaseName="[string]Numeric" ButtonsVisibility="[SMVisibility]Collapsed" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]24" Id="83bad72c81bf435da63ba84f6ed5db59" Interval="[double]1" IsReadOnly="[bool]True" Label="[UIModel]dfc7d535a84046808443e74de995c45c" Left="[float]7" Maximum="[double]Infinity" Minimum="[double]-Infinity" TabIndex="[int]3" Top="[float]119" Value="{ClusterBinding FieldName=Wrapper}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="dfc7d535a84046808443e74de995c45c" LabelOwner="[UIModel]83bad72c81bf435da63ba84f6ed5db59" Left="[float]7" Text="[string]Wrapper" Top="[float]99" Width="[float]47" />
+				<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Enabled="[bool]True" Foreground="[SMColor]#ff2b3033" Height="[float]87" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="b3140e0ca5984ed58afb51c4aa3de731" IsReadOnly="[bool]True" Label="[UIModel]cfed27a2e1104bd4aed199f1b1c4c441" Left="[float]89" TabIndex="[int]4" Text="{ClusterBinding FieldName=Rotary\ Stage\ Log}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]118" TypeToReplace="[bool]False" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]182" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="cfed27a2e1104bd4aed199f1b1c4c441" LabelOwner="[UIModel]b3140e0ca5984ed58afb51c4aa3de731" Left="[float]89" Text="[string]Rotary Stage Log" Top="[float]98" Width="[float]90" />
+			</Cluster>
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="3ac30ec759524e88ac96594873a812ff" LabelOwner="[UIModel]fe61e2c08293488ab2c304df40eb3d4f" Left="[float]308" Text="[string]Instrument Info Out" Top="[float]176" Width="[float]105" xmlns="http://www.ni.com/PanelCommon" />
+		</NativeFrontPanel>
+		<DataItem DataType="@f9aa2f93a3094aeb996687db0563cfa1" Id="e07026184266496cb2d8f2ed110d4f1c" Name="Instrument Info Out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>""</Field1>
+					<Field2>""</Field2>
+					<Field3>False</Field3>
+					<Field4>0x0</Field4>
+					<Field5>""</Field5>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="Instrument Info.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="7bfbac67fa4141dca3106727e9c08749">
+			<Attributed AttributedType="@d188551c5be746d2adc7ca6cd0dc82b3">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="f9aa2f93a3094aeb996687db0563cfa1">
+			<Typedef TypedefName="Instrument Info.gtype" UnderlyingType="@3a09078125ed40929d7b909eceb20274" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="4f7e68eb88124b28b78b7a299a305f1e">
+			<Attributed AttributedType="@e2b9813d19c34e809f40f4b4a4372003">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="70ab436615094161af48bc4411d041e8">
+			<Attributed AttributedType="@b253464d80034f96a9ec322920c6afb7">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="86b66a966c0a42ec9f364b3d152f0ed3">
+			<Attributed AttributedType="@e52761a6321e4a0bafb26e002ebb7fd3">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="eef5713fc82f414d88c3bec29c552064">
+			<Typedef TypedefName="Rotary Move Cluster.gtype" UnderlyingType="@1b9ef26378164202b9e2d9a757bcce25" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="b9c986ca3bc54f58808da103b6f68666">
+			<Attributed AttributedType="@1c7727efff9342aaa9e59d8c884ac188">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="935043af93874d8d81456513716596e3">
+			<Typedef TypedefName="Shutter Operations.gtype" UnderlyingType="@c5279f558ed9428eb8d630ddd3f6b0e4" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="d188551c5be746d2adc7ca6cd0dc82b3">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Rotary Stage Initialize And Home.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@3a2041ccf52f4e3c9d3edc1c00e6f5e4">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Comunications Ports In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@ce7e97556aac4927afcd12d4781337c3">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error In  " />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@15d4450c584947f5bc6750555153cbc7">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Comunications Ports Out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@c21b93e7a2c14fc797d1066d8a64a4fd">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error Out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="3a09078125ed40929d7b909eceb20274">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="PortCom_Sample" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Rotary Stage Address" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Rotary Homed?" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Wrapper" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Rotary Stage Log" DataType="String" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="e2b9813d19c34e809f40f4b4a4372003">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Rotary Stage Close Coms.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@3a2041ccf52f4e3c9d3edc1c00e6f5e4">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Instrument Info In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@ce7e97556aac4927afcd12d4781337c3">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@15d4450c584947f5bc6750555153cbc7">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Instrument Info Out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@c21b93e7a2c14fc797d1066d8a64a4fd">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error Out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="b253464d80034f96a9ec322920c6afb7">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Rotary Disable Steppers.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@3a2041ccf52f4e3c9d3edc1c00e6f5e4">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Instrument Info" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@ce7e97556aac4927afcd12d4781337c3">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@15d4450c584947f5bc6750555153cbc7">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]instrument info out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@c21b93e7a2c14fc797d1066d8a64a4fd">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error Out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="e52761a6321e4a0bafb26e002ebb7fd3">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Rotary Stage Move to Position.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@3a2041ccf52f4e3c9d3edc1c00e6f5e4">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Instrument Info In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@64b4a8693c574242b11d68abad0a6f04">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Rotary Move Cluster" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@ce7e97556aac4927afcd12d4781337c3">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error In  " />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@15d4450c584947f5bc6750555153cbc7">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Instrument Control Mega Cluster Out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@c21b93e7a2c14fc797d1066d8a64a4fd">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error Out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="1b9ef26378164202b9e2d9a757bcce25">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Position Degrees" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Feedrate" DataType="Int32" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="1c7727efff9342aaa9e59d8c884ac188">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Rotary Shutter.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@3a2041ccf52f4e3c9d3edc1c00e6f5e4">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Instrument Info" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@086d60794d2645bc87128f01ebfdfd84">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Snapshot Exposure Time (ms)" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@ce7e97556aac4927afcd12d4781337c3">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@49a9fadbc6dd495e8578f465d7bcaffb">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Shutter Operations" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@15d4450c584947f5bc6750555153cbc7">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]instrument info out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@c21b93e7a2c14fc797d1066d8a64a4fd">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error Out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="c5279f558ed9428eb8d630ddd3f6b0e4">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Snapshot" />
+					<EnumerationMember Value="1" Name="Open Shutter" />
+					<EnumerationMember Value="2" Name="Close Shutter" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="3a2041ccf52f4e3c9d3edc1c00e6f5e4">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="@f9aa2f93a3094aeb996687db0563cfa1" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="ce7e97556aac4927afcd12d4781337c3">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L3" DataType="Error" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="15d4450c584947f5bc6750555153cbc7">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="@f9aa2f93a3094aeb996687db0563cfa1" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="c21b93e7a2c14fc797d1066d8a64a4fd">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R3" DataType="Error" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="64b4a8693c574242b11d68abad0a6f04">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="@eef5713fc82f414d88c3bec29c552064" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="086d60794d2645bc87128f01ebfdfd84">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="Int32" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="49a9fadbc6dd495e8578f465d7bcaffb">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="T0" DataType="@935043af93874d8d81456513716596e3" />
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="Rotary Stage Initialize And Home.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Rotary Stage Initialize And Home" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Segoe UI" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="Rotary Stage Close Coms.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Rotary Stage Close Coms" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="Rotary Disable Steppers.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Rotary Disable Steppers" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="Rotary Stage Move to Position.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Rotary Stage Move to Position" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Segoe UI" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="Rotary Shutter.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Rotary Shutter" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Verdana" FontSize="6.75" />
+								</FileNameText>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>
