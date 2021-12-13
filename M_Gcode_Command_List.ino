@@ -25,6 +25,14 @@ void MGcode(){                                  //Function that runs in the even
       closeShutter();                         //In case M214 close the shutter
     break;
 
+    case 215:                                 //In case M215 send the trigger signal
+      Trigger();
+    break;
+
+    case 220:                                 //In case M220 send the trigger_Laser signal
+      Photograph();
+    break;
+
     case 18:
       DisableSteppers();                         //In case M18 disengage motor
     break;

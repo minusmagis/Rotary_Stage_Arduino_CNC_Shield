@@ -21,7 +21,7 @@ void Home() {
 
   if (homeR){
   Serial.println("Homed");  
-  currentPosR = -100;                                   //Set the position to the homing position and home the steppers
+  currentPosR = -98;                                   //Set the position to the homing position and home the steppers
   }
   else{
   Serial.println("Failed");

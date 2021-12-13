@@ -5,35 +5,53 @@ extern const int SHUTTER_PIN_2;
 extern const int SHUTTER_PIN_3;
 extern const int SHUTTER_PIN_4;
 
+extern const int LaserPeriod;
+
+int ExposureTime = 0;
+int DelayTime = 0;
+
+void Snapshot(int ExposureTime = 0, int DelayTime = 0)
+{
+  delay(DelayTime);
+  openShutter();
+  delay(ExposureTime);
+  closeShutter();
+  Serial.println("Snapshot done");                    //For development purposes
+}
+
 void Shutter_Snapshot() {
   bool endMarker = false;                                 //Define a variable to break the for loop from inside a case structure
+  bool ValidCommand = true;
   for (int i = 0; i < 64; i++) {                          //Read the entire command in search for the attributes of the movement such as position velocity or if the laser should be on or off
     if (Command[i] == ' ' && endMarker == false) {        //Detect the next space that will indicate that a new attribute is expected (G1 X23.34)
       switch (Command[i + 1]) {                           //The switch will read the letter immediately after the space which will indicate the attribute of this movement instruction
         case 'S':                                         //If the case is X it means we want to change the X position so we will scan the following numbers to know to which position we have to move
           {
-            openShutter();
-            delay(SubCommandExtractor(i).toInt() * 1000);
-            closeShutter();
-            //        Serial.println("S checked");                    //For development purposes
+            ExposureTime = SubCommandExtractor(i).toInt() * 1000;
+//                    Serial.println("S checked");                    //For development purposes
           }
           break;                                          //Break the loop to continue looking for other attributes
 
         case 'P':                                         //If the case is Y it means we want to change the Y position so we will scan the following numbers to know to which position we have to move
           {
-            openShutter();
-            delay(SubCommandExtractor(i).toInt());
-            closeShutter();
-            //        Serial.println("P checked");                    //For development purposes
+            ExposureTime = SubCommandExtractor(i).toInt();
+//                    Serial.println("P checked");                    //For development purposes
+          }
+          break;                                          //Break the loop to continue looking for other attributes
+
+        case 'T':                                         //If the case is Y it means we want to change the Y position so we will scan the following numbers to know to which position we have to move
+          {
+            Demo();
+            //        Serial.println("T checked");                    //For development purposes
           }
           break;                                          //Break the loop to continue looking for other attributes
 
         case 'D':                                         //If the case is Y it means we want to change the Y position so we will scan the following numbers to know to which position we have to move
           {
-            Demo();
-            //        Serial.println("D checked");                    //For development purposes
+            DelayTime = SubCommandExtractor(i).toInt();
+//                    Serial.println("D checked");                    //For development purposes
           }
-          break;                                          //Break the loop to continue looking for other attributes
+          break;  
 
         case ';':                                         //If the case is ;
           endMarker = true;                               //Set the endmarker flag to true to stop the loop
@@ -42,6 +60,7 @@ void Shutter_Snapshot() {
         default:
           {
             UnknownCommand();                                 //In the case of anything else, send: Unknown Command
+            ValidCommand = false;
             endMarker = true;                                 //And break the for loop that was looking for other attributes of the G command
           }
           break;
@@ -51,7 +70,11 @@ void Shutter_Snapshot() {
       break;
     }
   }
+WaitTillMsMultiple(LaserPeriod);
+Snapshot(ExposureTime,DelayTime);
 }
+
+
 
 
 // Low level functions that control the movement of the shutter stepper
